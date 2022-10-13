@@ -1,4 +1,4 @@
-import autoprefixer from 'autoprefixer';
+// import autoprefixer from 'autoprefixer';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -8,25 +8,20 @@ import BackdropFilter from "react-backdrop-filter";
 // import Auth from '../../utils/auth';
 
 const styles = {
-  nav: {
+  navigation: {
     margin: "auto",
     textAlign: 'center',
-    minHeight: '250px',
+    justifyContent: "flex-end",
     // backgroundImage: 'linear-gradient(to right, rgb(52, 9, 138) , rgb(236, 185, 236))',
     // BackdropFilter
-
   },
   headerContent: {
-    padding: "70px",
-    margin: "auto",
+    padding: "15px",
     color: 'white',
     display: 'flex',
-    justifyContent: 'space-around',
-    alignItems: 'center'
-  },
-  headerSides: {
-    width: '50%',
-    height: '100%'
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: "100%"
   },
   title: {
     color: 'white',
@@ -44,47 +39,48 @@ const styles = {
 
 const Header = () => {
   return (
+    <div className="navContainer">
       <BackdropFilter
-          className="bluredNav"
-          filter={"blur(10px) sepia(50%)"}
-          canvasFallback={true}
-          html2canvasOpts={{
-              allowTaint: true
-          }}
-          onDraw={() => {
-              console.log("Rendered !");
-          }}
-          >
-          <header style={styles.nav} className="display-flex align-center headerFade">
-            <div style={styles.headerContent} className="container">
-              <div style={styles.headerSides}>
-                <h3 style={{ fontSize: '1.75rem', fontWeight: '700' }}>
-                  Lorenzo Ferri
-                </h3>
-                <div>
-                  <Link
-                    style={styles.button}
-                    className="btn"
-                    to="/login"
-                    data-toggle="modal"
-                    data-target=".bd-example-modal-lg-login"
-                  >
-                    Login
-                  </Link>
-                  <Link
-                    style={styles.button}
-                    className="btn"
-                    to="/signup"
-                    data-toggle="modal"
-                    data-target=".bd-example-modal-lg-signup"
-                  >
-                    Signup
-                  </Link>
-                  </div>
-                </div>
-              </div>
-        </header>
-            </BackdropFilter>
+        className="bluredNav"
+        filter={"blur(10px) sepia(50%)"}
+        canvasFallback={true}
+        html2canvasOpts={{ allowTaint: true }}
+        onDraw={() => { console.log("Rendered !"); }}
+        style={{ position: "sticky"}}
+        >
+        <div style={styles.headerContent} className="flex">
+          <h3 style={{ fontSize: '1.75rem', fontWeight: '700' }}>
+            Lorenzo Ferri
+          </h3>
+          <div style={{ marginRight: "150px" }}>
+            <Link
+              style={styles.button}
+              className="btn"
+              to="/login">
+              Learning
+            </Link>
+            <Link
+              style={styles.button}
+              className="btn"
+              to="/signup">
+              Passion Projects
+            </Link>
+            <Link
+              style={styles.button}
+              className="btn"
+              to="/signup">
+              Contact me
+            </Link>
+            <Link
+              style={styles.button}
+              className="btn"
+              to="/signup">
+              Skills
+            </Link>
+          </div>
+        </div>
+      </BackdropFilter>
+    </div>
   );
 };
 
