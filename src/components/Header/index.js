@@ -21,7 +21,8 @@ const styles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    width: "100%"
+    width: "100%",
+    // textShadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   },
   title: {
     color: 'white',
@@ -48,34 +49,34 @@ const Header = () => {
         onDraw={() => { console.log("Rendered !"); }}
         style={{ position: "sticky"}}
         >
-        <div style={styles.headerContent} className="flex">
-          <h3 style={{ fontSize: '1.75rem', fontWeight: '700' }}>
+        <div style={styles.headerContent} className="flex textStroke">
+          <h3 style={{ fontSize: '1.75rem', fontWeight: '700', marginLeft: "25px" }}>
             Lorenzo Ferri
           </h3>
           <div style={{ marginRight: "150px" }}>
             <Link
               style={styles.button}
               className="btn"
+              to="/signup">
+              Home
+            </Link>
+            <Link
+              style={styles.button}
+              className="btn"
               to="/login">
-              Learning
+              Skills
             </Link>
             <Link
               style={styles.button}
               className="btn"
               to="/signup">
-              Passion Projects
+              Projects
             </Link>
             <Link
               style={styles.button}
               className="btn"
               to="/signup">
               Contact me
-            </Link>
-            <Link
-              style={styles.button}
-              className="btn"
-              to="/signup">
-              Skills
             </Link>
           </div>
         </div>

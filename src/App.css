@@ -1,3 +1,8 @@
+:root {
+  --dblue: #14171c;
+  --lblue: #344d6c;
+}
+
 .App {
   text-align: center;
 }
@@ -13,15 +18,61 @@
   }
 }
 
-.App-div {
-  background-color: #282c34;
-  min-height: 100vh;
+.title-div {
+  /* background-color: #e5e7f0; */
+  /* background-color: #27282c; */
+  /* background-color: #282c34; */
+  width: 100%;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-left: 15vw;
+  font-size: calc(25px + 2vmin);
+  /* color: rgb(85, 85, 85); */
+  color: rgb(204, 204, 204);
+}
+
+.desc-div {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: start;
+  padding-left: 15vw;
+  font-size: calc(25px + 2vmin);
+  /* color: rgb(85, 85, 85); */
+  color: rgb(204, 204, 204);
+}
+
+.bubbleTop {
+  background-color: var(--dblue);
+  border-color: var(--lblue);
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: max-content;
+}
+
+.bubbleBot {
+  background-color: var(--dblue);
+  border-color: var(--lblue);
+  border-radius: 15px;
+  /* border-top-right-radius: 0px; */
+  border-top-left-radius: 0px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: max-content;
 }
 
 .App-link {

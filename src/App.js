@@ -1,19 +1,20 @@
-import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import "./index.css";
 
 
-import Test from "./pages/test";
+import Main from "./pages/main";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
         <Header />
-        <div className="container">
+        <div className="">
           <Routes>
-            <Route path="/" element={<Test />} />
+            <Route path="/" element={<Main />} />
           </Routes>
         </div>
         {/* <Footer /> */}
