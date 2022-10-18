@@ -40,43 +40,37 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: start;
+  justify-content: flex-start;
   padding-left: 15vw;
-  font-size: calc(25px + 2vmin);
+  font-size: calc(5px + 2vmin);
   /* color: rgb(85, 85, 85); */
   color: rgb(204, 204, 204);
 }
 
-.bubbleTop {
+.bubble {
   background-color: var(--dblue);
   border-color: var(--lblue);
   border-radius: 15px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
   padding: 2%;
   display: flex;
   flex-direction: column;
+
+}
+
+.bubbleTop {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   align-items: left;
   justify-content: center;
   width: max-content;
 }
 
 .bubbleBot {
-  background-color: var(--dblue);
-  border-color: var(--lblue);
-  border-radius: 15px;
   /* border-top-right-radius: 0px; */
   border-top-left-radius: 0px;
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
   align-items: left;
   justify-content: center;
   width: max-content;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
