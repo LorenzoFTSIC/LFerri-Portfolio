@@ -2,6 +2,11 @@
 /* @tailwind components; #282c34 */
 @tailwind utilities;
 
+:root {
+  --dblue: #14171c;
+  --lblue: #344d6c;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,7 +24,6 @@ body {
   background-color: "#282c34";
   color: rgb(204, 204, 204);
 }
-
 
 html {
   font-family: "Montserrat", sans-serif;
@@ -49,6 +53,7 @@ html {
 }
 
 .hover-underline-animation {
+  cursor: pointer;
   font-size: 1.25vh;
   display: flex;
   position: relative;
@@ -76,6 +81,12 @@ html {
 .textStroke {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .skills {
@@ -109,4 +120,60 @@ html {
 .skillBox img:hover {
   filter: grayscale(0%);
   transition: all .5s linear;
+}
+
+
+.title-div {
+  /* background-color: #e5e7f0; */
+  /* background-color: #27282c; */
+  /* background-color: #282c34; */
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-left: 15vw;
+  font-size: calc(25px + 2vmin);
+  /* color: rgb(85, 85, 85); */
+  color: rgb(204, 204, 204);
+}
+
+.desc-div {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  padding-left: 15vw;
+  font-size: calc(5px + 2vmin);
+  /* color: rgb(85, 85, 85); */
+  color: rgb(204, 204, 204);
+}
+
+.bubble {
+  background-color: var(--dblue);
+  border-color: var(--lblue);
+  border-radius: 15px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.bubbleTop {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  align-items: left;
+  justify-content: center;
+  width: max-content;
+}
+
+.bubbleBot {
+  /* border-top-right-radius: 0px; */
+  border-top-left-radius: 0px;
+  align-items: left;
+  justify-content: center;
+  width: max-content;
 }

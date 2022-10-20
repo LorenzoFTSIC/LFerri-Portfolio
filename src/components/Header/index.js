@@ -1,10 +1,10 @@
-// import autoprefixer from 'autoprefixer';
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import "../../index.css";
 
 import BackdropFilter from "react-backdrop-filter";
+import { Link } from "react-scroll";
 // import Auth from '../../utils/auth';
 
 const styles = {
@@ -57,25 +57,45 @@ const Header = () => {
             <Link
               style={styles.button}
               className="btn hover-underline-animation"
-              to="/signup">
+              to="home"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>
               Home
             </Link>
             <Link
               style={styles.button}
               className="btn hover-underline-animation"
-              to="/login">
+              to="skills"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>
               Skills
             </Link>
             <Link
               style={styles.button}
               className="btn hover-underline-animation"
-              to="/signup">
+              to="projects"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>
               Projects
             </Link>
             <Link
               style={styles.button}
               className="btn hover-underline-animation"
-              to="/signup">
+              to="contact"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}>
               Contact me
             </Link>
           </div>

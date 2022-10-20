@@ -18,7 +18,7 @@ import logoPS from "../assets/images/skills/photoshop-colored.svg"
 const Contact = () => {
   return (
     <div>
-      <main>
+      <main id="home">
         <div className="title-div textStroke">
           <div className="border-4 bubble bubbleTop">
             <h2>
@@ -37,8 +37,7 @@ const Contact = () => {
           </div>
         </div>
       </main>
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
-      <section className="skills">
+      <section className="skills" id="skills">
         <div className="bubble skillBox border-4">
           <h2>Proficient in:</h2>
           <div className="gap-4 flex flex-col">
