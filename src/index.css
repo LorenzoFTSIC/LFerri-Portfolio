@@ -48,6 +48,31 @@ html {
   top: 0px;
 }
 
+.hover-underline-animation {
+  font-size: 1.25vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(204, 204, 204);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .textStroke {
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -77,4 +102,11 @@ html {
 .skillBox img {
   width:10%;
   padding: 1%;
+  filter: grayscale(80%);
+  transition: all .5s ease-in;
+}
+
+.skillBox img:hover {
+  filter: grayscale(0%);
+  transition: all .5s linear;
 }

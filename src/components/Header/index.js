@@ -53,28 +53,28 @@ const Header = () => {
           <h3 style={{ fontSize: '1.75rem', fontWeight: '700', marginLeft: "25px" }}>
             Lorenzo Ferri
           </h3>
-          <div style={{ marginRight: "150px" }}>
+          <div style={{ marginRight: "150px" }} className="flex">
             <Link
               style={styles.button}
-              className="btn"
+              className="btn hover-underline-animation"
               to="/signup">
               Home
             </Link>
             <Link
               style={styles.button}
-              className="btn"
+              className="btn hover-underline-animation"
               to="/login">
               Skills
             </Link>
             <Link
               style={styles.button}
-              className="btn"
+              className="btn hover-underline-animation"
               to="/signup">
               Projects
             </Link>
             <Link
               style={styles.button}
-              className="btn"
+              className="btn hover-underline-animation"
               to="/signup">
               Contact me
             </Link>
