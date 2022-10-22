@@ -87,6 +87,36 @@ html {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-top: 20vh;
+}
+
+.singleProject {
+  padding: 1%;
+  padding-top: 2%;
+}
+
+.singleProject img {
+  width: 20%;
+  border-color: var(--lblue);
+  border-radius: 15px;
+}
+
+.singleProject h2 {
+  font-size: calc(2vmin);
+  height: 25%;
+  width: 100%;
+
+}
+
+.singleProject p {
+  
+  font-size: calc(5px + 1vmin);
+}
+
+.projectText {
+  padding-left: 4%;
+  color: rgb(204, 204, 204);
+
 }
 
 .skills {
@@ -97,7 +127,6 @@ html {
 
 .skillBox {
   text-align: center;
-  font-size: calc(15px + 2vmin);
   width: 40%;
   display: flex;
   justify-content: center;
@@ -113,13 +142,13 @@ html {
 .skillBox img {
   width:10%;
   padding: 1%;
-  filter: grayscale(80%);
-  transition: all .5s ease-in;
+  filter: grayscale(90%);
+  transition: all .75s ease-in;
 }
 
 .skillBox img:hover {
   filter: grayscale(0%);
-  transition: all .5s linear;
+  transition: all .20s linear;
 }
 
 
@@ -176,4 +205,8 @@ html {
   align-items: left;
   justify-content: center;
   width: max-content;
+}
+
+.bubbleHeader {
+  font-size: calc(15px + 2vmin);
 }

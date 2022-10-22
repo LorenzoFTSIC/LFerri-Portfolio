@@ -1,5 +1,5 @@
 import React from 'react';
-// import logo from '../assets/images/logo.svg';
+
 import logoReact from "../assets/images/skills/react-colored.svg"
 import logoCss from "../assets/images/skills/css3-colored.svg"
 import logoExpress from "../assets/images/skills/express-colored-dark.svg"
@@ -14,6 +14,8 @@ import logoWebpack from "../assets/images/skills/webpack-colored.svg"
 import logoBootstrap from "../assets/images/skills/bootstrap-colored.svg"
 import logoApollo from "../assets/images/skills/apollo2.png"
 import logoPS from "../assets/images/skills/photoshop-colored.svg"
+
+import smallLFcoders from "../assets/images/projects/lfcoders.jpg"
 
 const Contact = () => {
   return (
@@ -39,7 +41,7 @@ const Contact = () => {
       </main>
       <section className="skills" id="skills">
         <div className="bubble skillBox border-4">
-          <h2>Proficient in:</h2>
+          <h2 className="bubbleHeader">Proficient in:</h2>
           <div className="gap-4 flex flex-col">
             <div className="skillList">
               <img src={logoCss} alt="css3 logo"></img>
@@ -63,6 +65,20 @@ const Contact = () => {
         </div>
       </section>
       <section className="projects">
+        <div className="bubble skillbox border-4 w-3/4">
+          <h2 className="bubbleHeader flex justify-center">Major Completed Projects:</h2>
+          <div className="projectBox">
+            <div className="singleProject flex">
+              <img src={smallLFcoders} alt="collaboration stock img" className="border-4"></img>
+              <div className="projectText">
+                <h2>LFCoders</h2>
+                <p> Looking For Coders or LFCoders for short is an app that works similarly to a social media site for coding. 
+                  Once registered, you can look for projects that are seeking collaborators, or look for collaborators if you have a project in mind. All of which can be filtered by various criteria.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         
       </section>
     </div>
