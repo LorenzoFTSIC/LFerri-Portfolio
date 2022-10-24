@@ -119,6 +119,45 @@ html {
 
 }
 
+.nextButton {
+  height: 30%;
+  border: 2px solid var(--lblue);
+  border-radius: 15px;
+  text-align: center;
+  width: fit-content;
+  padding: 1%;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1%;
+}
+
+.modalButton {
+  height: 30%;
+  border: 2px solid var(--lblue);
+  border-radius: 15px;
+  text-align: center;
+  width: fit-content;
+  padding: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin: 2%;
+  margin-top: 10%;
+}
+
+.modalMain {
+  position: 'absolute';
+  top: '50%';
+  left: '50%';
+  transform: 'translate(-50%, -50%)';
+  width: 400;
+  /* background-color: 'background.paper'; */
+  border: '2px solid #000';
+  box-shadow: 24;
+  /* p: 4; */
+}
+
 .skills {
   display: flex;
   justify-content: center;

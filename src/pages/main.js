@@ -1,4 +1,8 @@
 import React from 'react';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+
 
 import logoReact from "../assets/images/skills/react-colored.svg"
 import logoCss from "../assets/images/skills/css3-colored.svg"
@@ -17,7 +21,24 @@ import logoPS from "../assets/images/skills/photoshop-colored.svg"
 
 import smallLFcoders from "../assets/images/projects/lfcoders.jpg"
 
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  border: '2px solid',
+  boxShadow: 24,
+  p: 4,
+};
+
+
+
 const Contact = () => {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div>
       <main id="home">
@@ -69,13 +90,35 @@ const Contact = () => {
           <h2 className="bubbleHeader flex justify-center">Major Completed Projects:</h2>
           <div className="projectBox">
             <div className="singleProject flex">
-              <img src={smallLFcoders} alt="collaboration stock img" className="border-4"></img>
-              <div className="projectText">
+              <img src={smallLFcoders} alt="collaboration stock img" className="border-4 w-4/12"></img>
+              <div className="projectText w-10/12">
                 <h2>LFCoders</h2>
-                <p> Looking For Coders or LFCoders for short is an app that works similarly to a social media site for coding. 
-                  Once registered, you can look for projects that are seeking collaborators, or look for collaborators if you have a project in mind. All of which can be filtered by various criteria.
+                <p> Looking For Coders or LFCoders for short is a fullstack application made through collaboration using Github for version control that works similarly to a social media site for coding. 
+                  Once registered, you can look for projects that are seeking collaborators, or look for collaborators if you have a project 
+                  in mind. All of which can be filtered by various criteria such as what tech stack is sought after/being used, availability, etc.
                 </p>
               </div>
+              <button className="nextButton w-2/12 border-4" onClick={handleOpen}>More</button>
+              <Modal
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+              >
+                <Box sx={style} className="bubble">
+                  <Typography id="modal-modal-title" variant="h6" component="h2">
+                    LFCoders
+                  </Typography>
+                  <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                    This project uses various technologies from front-end to back-end packages such as Apollo client, MaterialUI, Axios, Github API, Bootstrap, JWT Authentication, GraphQL, and React being the primary ones.
+                  </Typography>
+                  <div className="flex justify-center">
+                    <button className="border-4 modalButton">
+                      <a href="https://github.com/LorenzoFTSIC/LFCoders" target="_blank" rel="noreferrer" >Repository</a>
+                    </button>
+                  </div>
+                </Box>
+              </Modal>
             </div>
           </div>
         </div>
