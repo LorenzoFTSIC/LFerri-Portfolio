@@ -178,12 +178,21 @@ html {
   padding: 1%;
 }
 
+.skillBox a {
+  /* width:10%; */
+  width: 100%;
+  padding: 1%;
+  /* filter: grayscale(90%);
+  transition: all .75s ease-in; */
+}
+
 .skillBox img {
-  width:10%;
+  width: 100%;
   padding: 1%;
   filter: grayscale(90%);
   transition: all .75s ease-in;
 }
+
 
 .skillBox img:hover {
   filter: grayscale(0%);

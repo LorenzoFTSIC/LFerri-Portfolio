@@ -65,22 +65,50 @@ const Contact = () => {
           <h2 className="bubbleHeader">Proficient in:</h2>
           <div className="gap-4 flex flex-col">
             <div className="skillList">
-              <img src={logoCss} alt="css3 logo"></img>
-              <img src={logoReact} alt="react framework logo"></img>
-              <img src={logoTailwind} alt="Tailwind framework logo"></img>
-              <img src={logoBootstrap} alt="Bootstrap logo"></img>
-              <img src={logoPS} alt="Photoshop logo"></img>
-              <img src={logoJavascript} alt="Javascript logo"></img>
-              <img src={logoJquery} alt="Jquery logo"></img>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"  target="_blank" rel="noreferrer">
+                <img src={logoCss} alt="css3 logo"></img>
+              </a>
+              <a href="https://reactjs.org/"  target="_blank" rel="noreferrer">
+                <img src={logoReact} alt="react framework logo"></img>
+              </a>
+              <a href="https://tailwindcss.com/"  target="_blank" rel="noreferrer">
+                <img src={logoTailwind} alt="Tailwind framework logo"></img>
+              </a>
+              <a href="https://getbootstrap.com/"  target="_blank" rel="noreferrer">
+                <img src={logoBootstrap} alt="Bootstrap logo"></img>
+              </a>
+              <a href="https://www.adobe.com/products/photoshop.html"  target="_blank" rel="noreferrer">
+                <img src={logoPS} alt="Photoshop logo"></img>
+              </a>
+              <a href="https://www.javascript.com/"  target="_blank" rel="noreferrer">
+                <img src={logoJavascript} alt="Javascript logo"></img>
+              </a>
+              <a href="https://jquery.com/"  target="_blank" rel="noreferrer">
+                <img src={logoJquery} alt="Jquery logo"></img>
+              </a>
             </div>
             <div className="skillList">
-              <img src={logoWebpack} alt="Webpack logo"></img>
-              <img src={logoNodejs} alt="Node JS logo"></img>
-              <img src={logoExpress} alt="express js logo"></img>
-              <img src={logoApollo} alt="Apollo logo"></img>
-              <img src={logoGraphql} alt="Graph ql logo"></img>
-              <img src={logoMongodb} alt="MongoDB logo"></img>
-              <img src={logoMysql} alt="My SQL logo"></img>
+              <a href="https://webpack.js.org/"  target="_blank" rel="noreferrer">
+                <img src={logoWebpack} alt="Webpack logo"></img>
+              </a>
+              <a href="https://nodejs.org/en/"  target="_blank" rel="noreferrer">
+                <img src={logoNodejs} alt="Node JS logo"></img>
+              </a>
+              <a href="https://expressjs.com/"  target="_blank" rel="noreferrer">
+                <img src={logoExpress} alt="express js logo"></img>
+              </a>
+              <a href="https://www.apollographql.com/"  target="_blank" rel="noreferrer">
+                <img src={logoApollo} alt="Apollo logo"></img>
+              </a>
+              <a href="https://graphql.org/"  target="_blank" rel="noreferrer">
+                <img src={logoGraphql} alt="Graph ql logo"></img>
+              </a>
+              <a href="https://www.mongodb.com/"  target="_blank" rel="noreferrer">
+                <img src={logoMongodb} alt="MongoDB logo"></img>
+              </a>
+              <a href="https://www.mysql.com/"  target="_blank" rel="noreferrer">
+                <img src={logoMysql} alt="My SQL logo"></img>
+              </a>
             </div>
           </div>
         </div>
