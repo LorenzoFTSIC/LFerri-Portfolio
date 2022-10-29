@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./index.css";
 
 
@@ -9,16 +9,11 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
-        <Header />
-        <div className="">
-          <Routes>
-            <Route path="/" element={<Main />} />
-          </Routes>
-        </div>
-        <Footer />
-    </Router>
-  );
-}
+    <div>
+      <Header />
+      <Main />
+      <Footer />
+    </div>
+);}
 
 export default App;
