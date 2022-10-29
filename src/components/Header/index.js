@@ -33,7 +33,6 @@ const styles = {
     textDecoration: 'none'
   },
   button: {
-    width: 100,
     margin: 20
   }
 };
@@ -90,13 +89,13 @@ const Header = () => {
             <Link
               style={styles.button}
               className="btn hover-underline-animation"
-              to="contact"
+              to="contactMe"
               activeClass="active"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}>
-              Contact me
+              Contact
             </Link>
           </div>
         </div>

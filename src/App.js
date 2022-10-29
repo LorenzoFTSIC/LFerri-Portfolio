@@ -5,7 +5,7 @@ import "./index.css";
 
 import Main from "./pages/main";
 import Header from "./components/Header";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
             <Route path="/" element={<Main />} />
           </Routes>
         </div>
-        {/* <Footer /> */}
+        <Footer />
     </Router>
   );
 }

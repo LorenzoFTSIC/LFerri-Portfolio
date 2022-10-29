@@ -16,7 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background-image: url(https://uploads.codesandbox.io/uploads/user/6dfa60b6-9433-40e5-b36d-9b8d2ad54c0c/zwoa-back3.jpg); */
   /* background-image: url(./assets/images/bg2.png);    */
-  background-image: url(./assets/images/mini2.jpg );
+  background-image: url(./assets/images/extendedbg.jpg );
   /* background-image: url(./assets/images/bg3.png); */
   background-repeat:no-repeat;
   background-size: cover;
@@ -54,7 +54,7 @@ html {
 
 .hover-underline-animation {
   cursor: pointer;
-  font-size: 1.25vh;
+  font-size: calc(7px + 1vmin);
   display: flex;
   position: relative;
   justify-content: center;
@@ -83,6 +83,13 @@ html {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.contactMe {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20vh;
+}
+
 .projects {
   display: flex;
   justify-content: center;
@@ -90,9 +97,31 @@ html {
   padding-top: 20vh;
 }
 
+.inlineHighlight {
+  /* filter: grayscale(0%); */
+  color: #c1ddff;
+  transition: all .75s ease-in;
+}
+
+.inlineHighlight:hover {
+  /* filter: grayscale(0%); */
+  color: #628ec5;
+  transition: all .10s linear;
+}
+
+.modalRole {
+  border-bottom: 2px solid var(--lblue);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.modalTech {
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
 .singleProject {
   padding: 1%;
-  padding-top: 2%;
 }
 
 .singleProject img {
@@ -200,6 +229,38 @@ html {
 }
 
 
+.contactBox {
+  text-align: center;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.contactBox a {
+  width:25%;
+  /* height: 100%; */
+  /* width: 100%; */
+  padding: 1%;
+  /* filter: grayscale(90%);
+  transition: all .75s ease-in; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactBox img {
+  /* width: 25%; */
+  padding: 1%;
+  filter: grayscale(90%);
+  transition: all .75s ease-in;
+}
+
+
+.contactBox img:hover {
+  filter: grayscale(0%);
+  transition: all .20s linear;
+}
+
+
 .title-div {
   /* background-color: #e5e7f0; */
   /* background-color: #27282c; */
@@ -257,4 +318,9 @@ html {
 
 .bubbleHeader {
   font-size: calc(15px + 2vmin);
+  /* margin-bottom: 2%; */
+}
+
+.footer {
+  margin-top: 20%;
 }
