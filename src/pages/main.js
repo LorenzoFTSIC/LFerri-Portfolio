@@ -20,6 +20,9 @@ import logoApollo from "../assets/images/skills/apollo2.png"
 import logoPS from "../assets/images/skills/photoshop-colored.svg"
 
 import smallLFcoders from "../assets/images/projects/lfcoders.jpg"
+import smallCanineCollective from "../assets/images/projects/cc.jpg"
+import smallNTTW from "../assets/images/projects/nttw.jpg"
+
 
 const style = {
   position: 'absolute',
@@ -35,9 +38,17 @@ const style = {
 
 
 const Contact = () => {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const [openNTTW, setOpenNTTW] = React.useState(false);
+  const handleOpenNTTW = () => setOpenNTTW(true);
+  const handleCloseNTTW = () => setOpenNTTW(false);
+  
+  const [openLFC, setOpenLFC] = React.useState(false);
+  const handleOpenLFC = () => setOpenLFC(true);
+  const handleCloseLFC = () => setOpenLFC(false);
+  
+  const [openCC, setOpenCC] = React.useState(false);
+  const handleOpenCC = () => setOpenCC(true);
+  const handleCloseCC = () => setOpenCC(false);
 
   return (
     <div>
@@ -117,51 +128,130 @@ const Contact = () => {
       <section className="projects">
         <div className="bubble skillbox border-4 w-3/4">
           <h2 className="bubbleHeader flex justify-center">Major Completed Projects:</h2>
-          <div className="projectBox">
-            <div className="singleProject flex">
-              <img src={smallLFcoders} alt="collaboration stock img" className="border-4 w-4/12"></img>
-              <div className="projectText w-10/12">
-                <h2>LFCoders</h2>
-                <p> Looking For Coders or LFCoders for short is a fullstack application made through collaboration using Github for version control that works similarly to a social media site for coding. 
-                  Once registered, you can look for projects that are seeking collaborators, or look for collaborators if you have a project 
-                  in mind. All of which can be filtered by various criteria such as what tech stack is sought after/being used, availability, etc.
-                </p>
-              </div>
-              <button className="nextButton w-2/12 border-4" onClick={handleOpen}>More</button>
-              <Modal
-              open={open}
-              onClose={handleClose}
-              aria-labelledby="modal-modal-title"
-              aria-describedby="modal-modal-description"
-              >
-                <Box sx={style} className="bubble">
-                  <Typography id="modal-modal-title" variant="h6" component="h2">
-                    LFCoders
-                  </Typography>
-
-                  <p className="modalRole" id="modal-modal-description">
-                    My Primary role in this project involved <span className="inlineHighlight">building the backend</span> using <span className="inlineHighlight">Apollo</span>, <span className="inlineHighlight">GraphQL</span>,
-                     and <span className="inlineHighlight">MongoDB</span> for the majority of the project, 
-                    during the last few days moving over to <span className="inlineHighlight">integrate funcitonality on the front-end</span> including buttons, text inputs, and so on.
-                  </p>
-                  {/* <Typography id="modal-modal-description" sx={{ mt: 2 }} >
-                    This project uses various technologies from front-end to back-end packages such as Apollo client, MaterialUI, Axios, Github API, Bootstrap, JWT Authentication, GraphQL, and React being the primary ones.
-                  </Typography> */}
-                  <p className="modalTech" id="modal-modal-description">
-                    This app was built using <span className="inlineHighlight">MongoDB</span>, <span className="inlineHighlight">Express</span>, <span className="inlineHighlight">React</span>, 
-                    <span className="inlineHighlight">NodeJs</span>, <span className="inlineHighlight">GraphQL</span>, <span className="inlineHighlight">Apollo</span>, <span className="inlineHighlight">Material-ui</span>, 
-                    <span className="inlineHighlight">Bootstrap</span>, <span className="inlineHighlight">Axios</span>, and the <span className="inlineHighlight">Github API</span>.
-                  </p>
-                  <div className="flex justify-center">
-                    <button className="border-4 modalButton">
-                      <a href="https://github.com/LorenzoFTSIC/LFCoders" target="_blank" rel="noreferrer" >Repository</a>
-                    </button>
-                  </div>
-                </Box>
-              </Modal>
+          <div className="singleProject flex">
+            <img src={smallLFcoders} alt="collaboration stock img" className="border-4 w-4/12"></img>
+            <div className="projectText w-10/12">
+              <h2>LFCoders</h2>
+              <p> Looking For Coders or LFCoders for short is a fullstack application made through collaboration using Github for version control that works similarly to a social media site for coding. 
+                Once registered, you can look for projects that are seeking collaborators, or look for collaborators if you have a project 
+                in mind. All of which can be filtered by various criteria such as what tech stack is sought after/being used, availability, etc.
+              </p>
             </div>
+            <button className="nextButton w-2/12 border-4" onClick={handleOpenLFC}>More</button>
+            <Modal
+            open={openLFC}
+            onClose={handleCloseLFC}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            >
+              <Box sx={style} className="bubble">
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                  LFCoders
+                </Typography>
+
+                <p className="modalRole" id="modal-modal-description">
+                  My Primary role in this project involved <span className="inlineHighlight">building the backend</span> using <span className="inlineHighlight">Apollo</span>, <span className="inlineHighlight">GraphQL</span>,
+                    and <span className="inlineHighlight">MongoDB</span> for the majority of the project, 
+                  during the last few days moving over to <span className="inlineHighlight">integrate funcitonality on the front-end</span> including buttons, text inputs, and so on.
+                </p>
+                {/* <Typography id="modal-modal-description" sx={{ mt: 2 }} >
+                  This project uses various technologies from front-end to back-end packages such as Apollo client, MaterialUI, Axios, Github API, Bootstrap, JWT Authentication, GraphQL, and React being the primary ones.
+                </Typography> */}
+                <p className="modalTech" id="modal-modal-description">
+                  This app was built using <span className="inlineHighlight">MongoDB</span>, <span className="inlineHighlight">Express</span>, <span className="inlineHighlight">React</span>, 
+                  <span className="inlineHighlight">NodeJs</span>, <span className="inlineHighlight">GraphQL</span>, <span className="inlineHighlight">Apollo</span>, <span className="inlineHighlight">Material-ui</span>, 
+                  <span className="inlineHighlight">Bootstrap</span>, <span className="inlineHighlight">Axios</span>, and the <span className="inlineHighlight">Github API</span>.
+                </p>
+                <div className="flex justify-center">
+                  <button className="border-4 modalButton">
+                    <a href="https://github.com/LorenzoFTSIC/LFCoders" target="_blank" rel="noreferrer" >Repository</a>
+                  </button>
+                </div>
+              </Box>
+            </Modal>
+          </div> 
+          <div className="singleProject flex">
+            <img src={smallCanineCollective} alt="dog stock img" className="border-4 w-4/12"></img>
+            <div className="projectText w-10/12">
+              <h2>Canine Collective</h2>
+              <p> Canine Collective is a fullstack application made with Github with the collaboration of three other members. It provides a service that allowes users to search for the desired dog breed for their life
+                from aspects such as energy level and temperment to grooming frequency or height and weight, and then allowing the user to favorite and save breeds for later.
+              </p>
+            </div>
+            <button className="nextButton w-2/12 border-4" onClick={handleOpenCC}>More</button>
+            <Modal
+            open={openCC}
+            onClose={handleCloseCC}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            >
+              <Box sx={style} className="bubble">
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                  Canine Collective
+                </Typography>
+
+                <p className="modalRole" id="modal-modal-description">
+                  My role in this project was very <span className="inlineHighlight">all-around</span> in terms of contribution to front-end or back-end. From building the skeleton of the website,
+                   <span className="inlineHighlight">handling user authentication</span>, querying the database with user specified information, and so on. This project was an introduction to conceps such as <span className="inlineHighlight">MVC</span>, and 
+                   importing data through a CSV.
+                </p>
+                {/* <Typography id="modal-modal-description" sx={{ mt: 2 }} >
+                  This project uses various technologies from front-end to back-end packages such as Apollo client, MaterialUI, Axios, Github API, Bootstrap, JWT Authentication, GraphQL, and React being the primary ones.
+                </Typography> */}
+                <p className="modalTech" id="modal-modal-description">
+                  This app was built using <span className="inlineHighlight">MySQL</span>, <span className="inlineHighlight">Express</span>, <span className="inlineHighlight">Handlebars</span>, 
+                  <span className="inlineHighlight">NodeJs</span>, <span className="inlineHighlight">Bcrypt</span>, <span className="inlineHighlight">sequelize</span>, <span className="inlineHighlight">Bootstrap</span>.
+                </p>
+                <div className="flex justify-center">
+                  <button className="border-4 modalButton">
+                    <a href="https://github.com/Nikolas-T/Canine-Collective" target="_blank" rel="noreferrer" >Repository</a>
+                  </button>
+                </div>
+              </Box>
+            </Modal>
+          </div>
+          <div className="singleProject flex">
+            <img src={smallNTTW} alt="health stock img" className="border-4 w-4/12"></img>
+            <div className="projectText w-10/12">
+              <h2>No Time To Weight</h2>
+              <p> No Time To Weight is a front-end application made using Github to collaborate with two other members. It serves the purpose of being able to determine a target kcal based on information input by the user,
+                and then suggest meals based on criteria such as the kcal/day, how many meals are looking to be ate per day, intolernaces, diets, and so on.
+              </p>
+            </div>
+            <button className="nextButton w-2/12 border-4" onClick={handleOpenNTTW}>More</button>
+            <Modal
+            open={openNTTW}
+            onClose={handleCloseNTTW}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            >
+              <Box sx={style} className="bubble">
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                No Time To Weight
+                </Typography>
+
+                <p className="modalRole" id="modal-modal-description">
+                  My role in this project was very <span className="inlineHighlight">all-around</span> contributing a little bit to just about everything, such as the navbar, 
+                  to elements of each page's structure, to <span className="inlineHighlight">querying the used APIs</span>.
+                </p>
+                {/* <Typography id="modal-modal-description" sx={{ mt: 2 }} >
+                  This project uses various technologies from front-end to back-end packages such as Apollo client, MaterialUI, Axios, Github API, Bootstrap, JWT Authentication, GraphQL, and React being the primary ones.
+                </Typography> */}
+                <p className="modalTech" id="modal-modal-description">
+                  This app was built using <span className="inlineHighlight">Tailwind</span> and <span className="inlineHighlight">Jquery</span> primarily. The APIs it uses were 
+                  <span className="inlineHighlight">api-ninja's caloriesburned</span> api, and <span className="inlineHighlight">Spoonacular</span> API.
+                </p>
+                <div className="flex justify-center">
+                  <button className="border-4 modalButton">
+                    <a href="https://github.com/Nikolas-T/Canine-Collective" target="_blank" rel="noreferrer" >Repository</a>
+                  </button>
+                </div>
+              </Box>
+            </Modal>
           </div>
         </div>
+      </section>
+      <section className="contactMe">
         
       </section>
     </div>
