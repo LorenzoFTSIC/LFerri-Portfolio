@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/LFerri-Portfolio/static/css/main.7596047f.css",
-    "main.js": "/LFerri-Portfolio/static/js/main.49df204e.js",
+    "main.js": "/LFerri-Portfolio/static/js/main.42f516d5.js",
     "static/js/787.6d9d4387.chunk.js": "/LFerri-Portfolio/static/js/787.6d9d4387.chunk.js",
     "static/media/extendedbg.jpg": "/LFerri-Portfolio/static/media/extendedbg.316e170061e1f5865d04.jpg",
     "static/media/ghlogo.png": "/LFerri-Portfolio/static/media/ghlogo.5326b4e5f8dfd9df6bd0.png",
@@ -25,11 +25,11 @@
     "static/media/webpack-colored.svg": "/LFerri-Portfolio/static/media/webpack-colored.cf92f221fed7474aa201921161e6fde5.svg",
     "static/media/css3-colored.svg": "/LFerri-Portfolio/static/media/css3-colored.4f50b33af1d2115e9ee75ed4b1570e17.svg",
     "main.7596047f.css.map": "/LFerri-Portfolio/static/css/main.7596047f.css.map",
-    "main.49df204e.js.map": "/LFerri-Portfolio/static/js/main.49df204e.js.map",
+    "main.42f516d5.js.map": "/LFerri-Portfolio/static/js/main.42f516d5.js.map",
     "787.6d9d4387.chunk.js.map": "/LFerri-Portfolio/static/js/787.6d9d4387.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7596047f.css",
-    "static/js/main.49df204e.js"
+    "static/js/main.42f516d5.js"
   ]
 }
