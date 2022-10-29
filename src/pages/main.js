@@ -60,6 +60,7 @@ const Contact = () => {
           </div>
         </div>
       </main>
+      
       <section className="skills" id="skills">
         <div className="bubble skillBox border-4">
           <h2 className="bubbleHeader">Proficient in:</h2>
@@ -137,9 +138,20 @@ const Contact = () => {
                   <Typography id="modal-modal-title" variant="h6" component="h2">
                     LFCoders
                   </Typography>
-                  <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+
+                  <p className="modalRole" id="modal-modal-description">
+                    My Primary role in this project involved <span className="inlineHighlight">building the backend</span> using <span className="inlineHighlight">Apollo</span>, <span className="inlineHighlight">GraphQL</span>,
+                     and <span className="inlineHighlight">MongoDB</span> for the majority of the project, 
+                    during the last few days moving over to <span className="inlineHighlight">integrate funcitonality on the front-end</span> including buttons, text inputs, and so on.
+                  </p>
+                  {/* <Typography id="modal-modal-description" sx={{ mt: 2 }} >
                     This project uses various technologies from front-end to back-end packages such as Apollo client, MaterialUI, Axios, Github API, Bootstrap, JWT Authentication, GraphQL, and React being the primary ones.
-                  </Typography>
+                  </Typography> */}
+                  <p className="modalTech" id="modal-modal-description">
+                    This app was built using <span className="inlineHighlight">MongoDB</span>, <span className="inlineHighlight">Express</span>, <span className="inlineHighlight">React</span>, 
+                    <span className="inlineHighlight">NodeJs</span>, <span className="inlineHighlight">GraphQL</span>, <span className="inlineHighlight">Apollo</span>, <span className="inlineHighlight">Material-ui</span>, 
+                    <span className="inlineHighlight">Bootstrap</span>, <span className="inlineHighlight">Axios</span>, and the <span className="inlineHighlight">Github API</span>.
+                  </p>
                   <div className="flex justify-center">
                     <button className="border-4 modalButton">
                       <a href="https://github.com/LorenzoFTSIC/LFCoders" target="_blank" rel="noreferrer" >Repository</a>
