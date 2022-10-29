@@ -12,6 +12,7 @@
     "react": "^18.2.0",
     "react-backdrop-filter": "^2.1.0",
     "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.7",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.12",
     "concurrently": "^5.1.0",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8"
   },

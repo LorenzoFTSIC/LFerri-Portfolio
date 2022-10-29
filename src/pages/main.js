@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import { Helmet } from "react-helmet";
 
 
 import logoReact from "../assets/images/skills/react-colored.svg"
@@ -54,6 +55,9 @@ const Contact = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Lorenzo Ferri-Portfolio</title>
+      </Helmet>
       <main id="home">
         <div className="title-div textStroke">
           <div className="border-4 bubble bubbleTop">
