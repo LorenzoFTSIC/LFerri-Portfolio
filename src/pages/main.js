@@ -18,6 +18,8 @@ import logoWebpack from "../assets/images/skills/webpack-colored.svg"
 import logoBootstrap from "../assets/images/skills/bootstrap-colored.svg"
 import logoApollo from "../assets/images/skills/apollo2.png"
 import logoPS from "../assets/images/skills/photoshop-colored.svg"
+import logoGH from "../assets/images/media/ghlogo.png"
+import logoLinked from "../assets/images/media/linkedlogo.png"
 
 import smallLFcoders from "../assets/images/projects/lfcoders.jpg"
 import smallCanineCollective from "../assets/images/projects/cc.jpg"
@@ -252,7 +254,26 @@ const Contact = () => {
         </div>
       </section>
       <section className="contactMe">
-        
+        <div className="bubble contactBox border-4">
+          <h2 className="bubbleHeader">Contact me:</h2>
+          <div className="contactPane">
+            <p style={{ padding: "2%" }}>LorenzoFerriTSIC@gmail.com</p>
+            <p>407-467-4093</p>
+            <div className="mediaSites">
+              <div className="skillList">
+                <a href="https://github.com/LorenzoFTSIC"  target="_blank" rel="noreferrer">
+                  <img src={logoGH} alt="github logo"></img>
+                </a>
+                <a href="https://www.linkedin.com/in/lorenzo-ferri-789ab2240/"  target="_blank" rel="noreferrer">
+                  <img src={logoLinked} alt="linkedin logo"></img>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
       </section>
     </div>
     
