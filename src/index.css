@@ -339,9 +339,15 @@ html {
     margin-top: 5%;
     margin-bottom: 5%;
   }
+  .contactBox {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 738px) {
   .skillBox {
     width: 70%;
+  }
+  .contactBox {
+    width: 60%;
   }
 }
