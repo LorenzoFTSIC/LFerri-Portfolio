@@ -162,6 +162,10 @@ html {
   margin-left: 1%;
 }
 
+.nextButton:hover {
+  background-color: #252b34;
+}
+
 .modalButton {
   height: 30%;
   border: 2px solid var(--lblue);
@@ -173,6 +177,10 @@ html {
   padding-bottom: 2%;
   margin: 2%;
   margin-top: 10%;
+}
+
+.modalButton:hover {
+  background-color: #252b34;
 }
 
 .modalMain {
