@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/LFerri-Portfolio/static/css/main.0af250e7.css",
+    "main.css": "/LFerri-Portfolio/static/css/main.839bbf9f.css",
     "main.js": "/LFerri-Portfolio/static/js/main.d9e22dbb.js",
     "static/js/787.6d9d4387.chunk.js": "/LFerri-Portfolio/static/js/787.6d9d4387.chunk.js",
     "static/media/extendedbg.jpg": "/LFerri-Portfolio/static/media/extendedbg.316e170061e1f5865d04.jpg",
@@ -24,12 +24,12 @@
     "static/media/tailwindcss-colored.svg": "/LFerri-Portfolio/static/media/tailwindcss-colored.e7b4a92d5aefbddd6f0651c024144be2.svg",
     "static/media/webpack-colored.svg": "/LFerri-Portfolio/static/media/webpack-colored.cf92f221fed7474aa201921161e6fde5.svg",
     "static/media/css3-colored.svg": "/LFerri-Portfolio/static/media/css3-colored.4f50b33af1d2115e9ee75ed4b1570e17.svg",
-    "main.0af250e7.css.map": "/LFerri-Portfolio/static/css/main.0af250e7.css.map",
+    "main.839bbf9f.css.map": "/LFerri-Portfolio/static/css/main.839bbf9f.css.map",
     "main.d9e22dbb.js.map": "/LFerri-Portfolio/static/js/main.d9e22dbb.js.map",
     "787.6d9d4387.chunk.js.map": "/LFerri-Portfolio/static/js/787.6d9d4387.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0af250e7.css",
+    "static/css/main.839bbf9f.css",
     "static/js/main.d9e22dbb.js"
   ]
 }
