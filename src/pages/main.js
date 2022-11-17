@@ -172,6 +172,9 @@ const Contact = () => {
                   <button className="border-4 modalButton">
                     <a href="https://github.com/LorenzoFTSIC/LFCoders" target="_blank" rel="noreferrer" >Repository</a>
                   </button>
+                  <button className="border-4 modalButton">
+                    <a href="https://quiet-coast-79925.herokuapp.com/" target="_blank" rel="noreferrer" >Deployment</a>
+                  </button>
                 </div>
               </Box>
             </Modal>
@@ -212,6 +215,9 @@ const Contact = () => {
                   <button className="border-4 modalButton">
                     <a href="https://github.com/Nikolas-T/Canine-Collective" target="_blank" rel="noreferrer" >Repository</a>
                   </button>
+                  <button className="border-4 modalButton">
+                    <a href="https://hidden-eyrie-39114.herokuapp.com/" target="_blank" rel="noreferrer" >Deployment</a>
+                  </button>
                 </div>
               </Box>
             </Modal>
@@ -249,7 +255,10 @@ const Contact = () => {
                 </p>
                 <div className="flex justify-center">
                   <button className="border-4 modalButton">
-                    <a href="https://github.com/Nikolas-T/Canine-Collective" target="_blank" rel="noreferrer" >Repository</a>
+                    <a href="https://github.com/pbnj1/No-time-to-weight-app" target="_blank" rel="noreferrer" >Repository</a>
+                  </button>
+                  <button className="border-4 modalButton">
+                    <a href="https://pbnj1.github.io/No-time-to-weight-app/" target="_blank" rel="noreferrer" >Deployment</a>
                   </button>
                 </div>
               </Box>
