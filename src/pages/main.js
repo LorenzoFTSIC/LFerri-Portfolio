@@ -271,7 +271,7 @@ const Contact = () => {
           <h2 className="bubbleHeader">Contact me:</h2>
           <div className="contactPane">
             <p style={{ padding: "2%" }}>LorenzoFerriTSIC@gmail.com</p>
-            <p>407-467-4093</p>
+            <p>407-233-7621</p>
             <div className="mediaSites">
               <div className="skillList">
                 <a href="https://github.com/LorenzoFTSIC"  target="_blank" rel="noreferrer">

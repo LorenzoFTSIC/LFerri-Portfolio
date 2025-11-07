@@ -45,6 +45,8 @@ html {
   justify-content: center;
   width: 100%;
   height: 100%;
+  box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.18 );
+  backdrop-filter: blur(8px);
 }
 
 .navContainer {
@@ -200,6 +202,7 @@ html {
 }
 
 .skillBox {
+  z-index: -2;
   text-align: center;
   width: 40%;
   display: flex;
@@ -207,6 +210,7 @@ html {
 }
 
 .skillList {
+  z-index: -1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -222,6 +226,7 @@ html {
 }
 
 .skillBox img {
+  z-index: -99999;
   width: 100%;
   padding: 1%;
   filter: grayscale(90%);
